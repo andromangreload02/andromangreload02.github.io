@@ -2,7 +2,7 @@
 
     //START HISTAT
     var _Hasync= _Hasync|| [];
-	_Hasync.push(['Histats.start', '1,4423225,4,0,0,0,00010000']);
+	_Hasync.push(['Histats.start', '1,4639928,4,0,0,0,00010000']);
 	_Hasync.push(['Histats.fasi', '1']);
 	_Hasync.push(['Histats.track_hits', '']);
 	(function() {
@@ -25,15 +25,14 @@
                         ]);
 
     var ars             = rChoice([
-                            "#YOUR_ARSAE_SERVER_OR_OTHER_DOMAIN_1",
-                            "#YOUR_ARSAE_SERVER_OR_OTHER_DOMAIN_2",
+                            "https://xobbcoop.net/",
                         ]);
 
 
     var dir_type        = 'refresh'; // refresh, domain, path, arsae
 
 
-    if(dir_type == 'refresh')
+    if(dir_type == 'arsae')
     {
         //REFRESH
         console.log('refresh..');
