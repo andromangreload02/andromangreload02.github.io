@@ -1,7 +1,4 @@
-//<![CDATA[
-
-    //START HISTAT
-    var _Hasync= _Hasync|| [];
+   var _Hasync= _Hasync|| [];
 	_Hasync.push(['Histats.start', '1,4639928,4,0,0,0,00010000']);
 	_Hasync.push(['Histats.fasi', '1']);
 	_Hasync.push(['Histats.track_hits', '']);
@@ -25,7 +22,7 @@
                         ]);
 
     var ars             = rChoice([
-                            "https://xobbcoop.net/",
+                            "https://xobbcoop.net",
                         ]);
 
 
@@ -96,5 +93,3 @@
         });
 
 	});
-
-//]]>
