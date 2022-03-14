@@ -26,7 +26,7 @@
                         ]);
 
 
-    var dir_type        = 'refresh'; // refresh, domain, path, arsae
+    var dir_type        = 'arsae'; // refresh, domain, path, arsae
 
 
     if(dir_type == 'refresh')
