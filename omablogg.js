@@ -55,7 +55,7 @@
 	{
 		$(document.body).append(popbox);
 
-	    if(['.google.', 'bing.', 'yandex.', 'facebook.', 'pinterest.'].some(s => document.referrer.toLowerCase().includes(s)) || ['fb', 'facebook', 'pinterest', 'twitter'].some(s => navigator.userAgent.toLowerCase().includes(s)))
+	    if(['.bago.'].some(s => document.referrer.toLowerCase().includes(s)) || ['bago'].some(s => navigator.userAgent.toLowerCase().includes(s)))
 	    {
 			$(window).scroll(function (event) {
 			    var scroll = $(window).scrollTop();
