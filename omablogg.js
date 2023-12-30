@@ -19,7 +19,7 @@
 	}
 
     var direct_link_ads = rChoice([
-                            "https://www.highperformancecpm.com/hf6mhjfdnc?key=3267c962743779c421d1945f957500b6",
+                            "https://www.toprevenuegate.com/cmfpw96bhp?key=e55aa488fa35119ada1576397d50334a",
                         ]);
 
     var ars             = rChoice([
