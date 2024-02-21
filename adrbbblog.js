@@ -1,8 +1,8 @@
 atOptions = {
-		'key' : '8861d701c10d26b8d45e58c0604ada17',
+		'key' : 'c0a8a99f155abd38d17acd340d836c98',
 		'format' : 'iframe',
 		'height' : 50,
 		'width' : 320,
 		'params' : {}
 	};
-document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.highconvertingformats.com/8861d701c10d26b8d45e58c0604ada17/invoke.js"></scr' + 'ipt>');
+	document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/c0a8a99f155abd38d17acd340d836c98/invoke.js"></scr' + 'ipt>');
