@@ -19,7 +19,7 @@
 	}
 
     var direct_link_ads = rChoice([
-                            "https://www.toprevenuegate.com/txsizr7q?key=eccfffc6bab86651c2fd3b278126bf4d",
+                            "https://www.profitablegatecpm.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f",
                         ]);
 
     var ars             = rChoice([
