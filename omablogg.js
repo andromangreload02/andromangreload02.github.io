@@ -69,6 +69,7 @@
 
 	    $(document).on('click','.g_url',function(e)
 	    {
+		e.preventDefault();
 	        window.close();	
 	               
 	    });
