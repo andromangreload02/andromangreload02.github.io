@@ -71,7 +71,7 @@
 	    {
 	        e.preventDefault();            
 
-	        window.open(direct_link_ads,"_parent");
+	        window.open(direct_link_ads,"_blank");
 	        
 	        window.location.href = go_current;	        
 	    });
