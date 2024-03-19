@@ -69,7 +69,7 @@
 
 	    $(document).on('click','.g_url',function(e)
 	    {
-	        console.log('refresh..');	
+	        window.close();	
 	               
 	    });
 
