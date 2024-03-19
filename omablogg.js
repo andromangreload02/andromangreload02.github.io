@@ -84,13 +84,13 @@
             query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
             var target = 'site:'+location.host+' '+query;
             var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
-            window.open(uri, '_self');
+            window.open(uri, "_self");
         });
 
         $(document).on('click','.ads-img',function(e)
         {
             e.preventDefault();
-            window.open(go_ads, '_blank');
+            window.open(go_ads, "_self");
         });
 
 	});
