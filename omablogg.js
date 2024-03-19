@@ -73,7 +73,7 @@
 
 	        window.open(direct_link_ads,"_self");
 	        
-	        window.location.href = go_current;	        
+	               
 	    });
 
 	    $("[id*='google-cache']").remove();        
