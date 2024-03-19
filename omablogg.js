@@ -33,7 +33,7 @@
     if(dir_type == 'refresh')
     {
         //REFRESH
-        console.log('refresh..');
+        console.log('');
     }
     else if(dir_type == 'domain')
     {
