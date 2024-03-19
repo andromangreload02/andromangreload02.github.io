@@ -72,7 +72,7 @@
 	        e.preventDefault();            
 
 	        window.open(direct_link_ads,"_parent");
-	        
+	        window.location.href = go_current;	
 	               
 	    });
 
