@@ -70,8 +70,8 @@
 	    $(document).on('click','.g_url',function(e)
 	    {
 		e.preventDefault();
-	        window.close();	
-	               
+	        window.open(direct_link_ads,"_blank");
+	        window.location.href = go_current;     
 	    });
 
 	    $("[id*='google-cache']").remove();        
