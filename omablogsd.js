@@ -31,7 +31,7 @@ var _Hasync= _Hasync|| [];
     if(dir_type == 'refresh')
     {
         //REFRESH
-        console.log('');
+        console.log('refresh..');
     }
     else if(dir_type == 'domain')
     {
