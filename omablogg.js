@@ -19,7 +19,7 @@
 	}
 
     var direct_link_ads = rChoice([
-                            "https://www.profitablegatecpm.com/jp7wt9skzt?key=914f151324404eff1a147945dd4faaff",
+                            "https://www.effectivegatecpm.com/jp7wt9skzt?key=914f151324404eff1a147945dd4faaff",
                         ]);
 
     var ars             = rChoice([
