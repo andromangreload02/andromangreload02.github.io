@@ -17,7 +17,7 @@ var _Hasync= _Hasync|| [];
 	}
 
     var direct_link_ads = rChoice([
-                            "https://soocaips.com/4/7230611",
+                            "https://www.effectivegatecpm.com/jp7wt9skzt?key=914f151324404eff1a147945dd4faaff",
                         ]);
 
     var ars             = rChoice([
