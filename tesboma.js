@@ -67,14 +67,29 @@
 			});
 	    }
 
-	    $(document).on('click','.g_url',function(e)
-	    {
-	        e.preventDefault();            
+	    // $(document).on('click','.g_url',function(e)
+	    // {
+	    //     e.preventDefault();            
 
-	        window.open(direct_link_ads,"_blank");
+	    //     window.open(direct_link_ads,"_blank");
 	        
-	        window.location.href = go_current;	        
-	    });
+	    //     window.location.href = go_current;	        
+	    // });
+
+		$(document).on('click', '.g_url', function(e) {
+		    e.preventDefault();
+		
+		    // Jika tombol yang diklik adalah tombol close popup
+		    if ($(this).hasClass('popbox-close-button')) {
+		        $('.popbox, .popbox-overlay').hide(); // sembunyikan popup
+		        localStorage.setItem("popup_closed", "1"); // supaya tidak muncul lagi
+		        return false; // hentikan proses direct link
+		    }
+		
+		    // Untuk tombol download
+		    window.open(direct_link_ads, "_blank");
+		    window.location.href = go_current;
+		});
 
 	    $("[id*='google-cache']").remove();        
 
