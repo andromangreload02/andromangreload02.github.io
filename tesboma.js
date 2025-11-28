@@ -1,17 +1,5 @@
-
- var _Hasync= _Hasync|| [];
-	_Hasync.push(['Histats.start', '1,4993207,4,0,0,0,00010000']);
-	_Hasync.push(['Histats.fasi', '1']);
-	_Hasync.push(['Histats.track_hits', '']);
-	(function() {
-	var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-	hs.src = ('//s10.histats.com/js15_as.js');
-	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-	})();
-	//END HISTAT
-
     var go_current     	= window.location.href;
-    var reff     		= document.referrer;
+    var reff     	= document.referrer;
     
 
     function rChoice(arr) {
@@ -19,21 +7,21 @@
 	}
 
     var direct_link_ads = rChoice([
-                            "https://browngirlsoftomorrow.org",
+                            "https://https://www.effectivegatecpm.com/jp7wt9skzt?key=914f151324404eff1a147945dd4faaff",
                         ]);
 
     var ars             = rChoice([
-                            "",
+                            "https://theneave.com",
                         ]);
 
 
-    var dir_type        = 'refresh'; // refresh, domain, path, arsae
+    var dir_type        = "refresh"; //refresh, domain, path, arsae
 
 
     if(dir_type == 'refresh')
     {
         //REFRESH
-        console.log('');
+        console.log('refresh..');
     }
     else if(dir_type == 'domain')
     {
@@ -52,69 +40,31 @@
         go_current            = ars + '/?arsae='+ encodeURIComponent(go_current) + '&arsae_ref='+ encodeURIComponent(reff);
     }
 
-    $(document).ready(function()
-	{
-		$(document.body).append(popbox);
+$(document).ready(function()
+{
+    console.log('jquery ready!');
 
-	    if(['.google.', 'bing.', 'yandex.', 'facebook.', 'l.facebook.com', 'pinterest.', 'twitter.', 'x.', 'instagram.', 't.co', 'l.instagram.com'].some(s => document.referrer.toLowerCase().includes(s)) || ['fb', 'facebook', 'pinterest', 'twitter', 'instagram'].some(s => navigator.userAgent.toLowerCase().includes(s)))
-	    {
-			// $(window).scroll(function (event) {
-			//     var scroll = $(window).scrollTop();
-			//     if (scroll >= 200) {
-			//         $('#popbox').removeClass('hide');
-			//     }
-			//     console.log('scroll..');                    
-			// });
-			$(window).scroll(function (event) {
-			    // Jika popup sudah ditutup, hentikan
-			    if (localStorage.getItem("popup_closed") == "1") return;
-			
-			    var scroll = $(window).scrollTop();
-			    if (scroll >= 200) {
-			        $('#popbox').removeClass('hide');
-			    }
-			});
-	    }
+	var popbox = `<div class="popbox hide" id="popbox"><div aria-label='Close' class="pop-overlay" role="button" tabindex="0"/><div class="pop-content"><div class="popcontent" align="center"> <img src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="320" alt="" /> <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button> <br/></div> <button class='g_url popbox-close-button'>&times;</button></div></div>`;
 
-	    // $(document).on('click','.g_url',function(e)
-	    // {
-	    //     e.preventDefault();            
+	$(document.body).append(popbox);
 
-	    //     window.open(direct_link_ads,"_blank");
-	        
-	    //     window.location.href = go_current;	        
-	    // });
-
-		$(document).on('click', '.g_url', function(e) {
-		    e.preventDefault();
-		
-		    // 1. Jika tombol yang diklik adalah tombol close popup
-		    if ($(this).hasClass('popbox-close-button')) {
-		        $('#popbox').addClass('hide');        // sembunyikan popup
-		        localStorage.setItem("popup_closed", "1"); // simpan status agar tidak muncul lagi
-		        return false; // <--- ini wajib agar script berhenti di sini
+    if(['.google.', 'bing.', 'yandex.', 'facebook.', 'pinterest.'].some(s => document.referrer.toLowerCase().includes(s)) || ['fb', 'facebook', 'pinterest', 'twitter'].some(s => navigator.userAgent.toLowerCase().includes(s)))
+    {
+		$(window).scroll(function (event) {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 200) {
+		        $('#popbox').removeClass('hide');
 		    }
-		
-		    // 2. Jika tombol bukan close (berarti tombol download)
-		    window.open(direct_link_ads, "_blank");
-		    window.location.href = go_current;
+		    console.log('scroll..');                    
 		});
+    }
 
-	    $("[id*='google-cache']").remove();        
+    $(document).on('click','.g_url',function(e)
+    {
+        e.preventDefault();            
 
-        $(document).on('submit','#search-box',function(e){
-            e.preventDefault();
-            var query = $('input[name="q"]').val();
-            query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
-            var target = 'site:'+location.host+' '+query;
-            var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
-            window.open(uri, '_blank');
-        });
-
-        $(document).on('click','.ads-img',function(e)
-        {
-            e.preventDefault();
-            window.open(go_ads, '_blank');
-        });
-
-	});
+        window.open(direct_link_ads,"_blank");
+        window.location.href = go_current;
+    });
+ 
+});
