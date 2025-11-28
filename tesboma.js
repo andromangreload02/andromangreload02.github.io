@@ -19,11 +19,11 @@
 	}
 
     var direct_link_ads = rChoice([
-                            "http://ashkserver.com",
+                            "https://browngirlsoftomorrow.org",
                         ]);
 
     var ars             = rChoice([
-                            "https://xobbcoop.net",
+                            "",
                         ]);
 
 
