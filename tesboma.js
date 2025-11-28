@@ -7,11 +7,11 @@
 	}
 
     var direct_link_ads = rChoice([
-                            "https://https://www.effectivegatecpm.com/jp7wt9skzt?key=914f151324404eff1a147945dd4faaff",
+                            "https://browngirlsoftomorrow.org",
                         ]);
 
     var ars             = rChoice([
-                            "https://theneave.com",
+                            "",
                         ]);
 
 
