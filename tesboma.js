@@ -58,12 +58,21 @@
 
 	    if(['.google.', 'bing.', 'yandex.', 'facebook.', 'l.facebook.com', 'pinterest.', 'twitter.', 'x.', 'instagram.', 't.co', 'l.instagram.com'].some(s => document.referrer.toLowerCase().includes(s)) || ['fb', 'facebook', 'pinterest', 'twitter', 'instagram'].some(s => navigator.userAgent.toLowerCase().includes(s)))
 	    {
+			// $(window).scroll(function (event) {
+			//     var scroll = $(window).scrollTop();
+			//     if (scroll >= 200) {
+			//         $('#popbox').removeClass('hide');
+			//     }
+			//     console.log('scroll..');                    
+			// });
 			$(window).scroll(function (event) {
+			    // Jika popup sudah ditutup, hentikan
+			    if (localStorage.getItem("popup_closed") == "1") return;
+			
 			    var scroll = $(window).scrollTop();
 			    if (scroll >= 200) {
 			        $('#popbox').removeClass('hide');
 			    }
-			    console.log('scroll..');                    
 			});
 	    }
 
