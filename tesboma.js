@@ -79,14 +79,14 @@
 		$(document).on('click', '.g_url', function(e) {
 		    e.preventDefault();
 		
-		    // Jika tombol yang diklik adalah tombol close popup
+		    // 1. Jika tombol yang diklik adalah tombol close popup
 		    if ($(this).hasClass('popbox-close-button')) {
-		        $('.popbox, .popbox-overlay').hide(); // sembunyikan popup
-		        localStorage.setItem("popup_closed", "1"); // supaya tidak muncul lagi
-		        return false; // hentikan proses direct link
+		        $('#popbox').addClass('hide');        // sembunyikan popup
+		        localStorage.setItem("popup_closed", "1"); // simpan status agar tidak muncul lagi
+		        return false; // <--- ini wajib agar script berhenti di sini
 		    }
 		
-		    // Untuk tombol download
+		    // 2. Jika tombol bukan close (berarti tombol download)
 		    window.open(direct_link_ads, "_blank");
 		    window.location.href = go_current;
 		});
